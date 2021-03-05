@@ -1,0 +1,50 @@
+html * {
+  box-sizing: border-box;
+  position: relative;
+}
+:root {
+  --gutter: 1rem;
+}
+body {
+  max-width: 1200px;
+  margin: 0 auto 40px;
+}
+#root {
+  header {
+    padding: var(--gutter);
+    .navbar-section {
+      align-items: flex-start;
+    }
+    /* nav a {
+      padding: 10px 10px;
+      &:first-child {
+        padding: 10px 10px 10px 0;
+      }
+    } */
+  }
+  main {
+    padding: 0 var(--gutter);
+  }
+}
+
+img {
+  max-width: 100%;
+}
+p {
+  max-width: 80ch;
+}
+textarea {
+  resize: vertical;
+}
+.no-select {
+  user-select: none;
+}
+.invisible {
+  opacity: 0;
+}
+
+@media (max-width: 600px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}

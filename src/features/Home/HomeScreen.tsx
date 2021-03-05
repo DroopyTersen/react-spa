@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
 
-export default function App() {
+export function HomeScreen() {
   // Create the count state.
   const [count, setCount] = useState(0);
   // Update the count (+1 every second).
@@ -12,7 +11,15 @@ export default function App() {
 
   return (
     <div>
-      <h1>Hi From App! and I've updated</h1>
+      <h1>Welcome!</h1>
+      <p>
+        I'm an app that is setup with "fast refresh". This means you can edit a file and I won't
+        reset component state.
+      </p>
+      <p>
+        For example, if you edit and save<code>/features/Home/HomeScreen.tsx</code>, you'll see me
+        update instantly <b>without resetting the counter</b>.
+      </p>
       <p>
         Count: <code>{count}</code>
       </p>

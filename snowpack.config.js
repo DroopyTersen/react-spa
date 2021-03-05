@@ -15,8 +15,10 @@ module.exports = {
     target: "es2018",
   },
   alias: {
-    "@components": "./components",
+    "@components": "./src/components",
     "@hooks": "./src/hooks",
+    "@global": "./src/global",
+    "@features": "./src/features",
   },
   packageOptions: {
     /* ... */
