@@ -1,18 +1,19 @@
 {
-    "compilerOptions": {
-      "paths": {
-        "@components/*": ["./src/components/*"],
-        "@hooks/*": ["./src/hooks/*"],
-        "@global/*": ["./src/global/*"],
-        "@features/*": ["./src/features/*"],
-      },
-      "jsx": "preserve",
-      "allowSyntheticDefaultImports": true,
-      "strict": false,
-      "moduleResolution": "node",
-      "lib": ["esnext", "dom"],
-      "module": "esnext",
-      "target": "esnext",
-      "skipLibCheck": true,
+  "compilerOptions": {
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@global/*": ["./src/global/*"],
+      "@features/*": ["./src/features/*"]
+    },
+    "jsx": "preserve",
+    "allowSyntheticDefaultImports": true,
+    "strict": false,
+    "moduleResolution": "node",
+    "lib": ["esnext", "dom"],
+    "module": "esnext",
+    "target": "esnext",
+    "typeRoots": ["./types"],
+    "skipLibCheck": true
   }
 }
